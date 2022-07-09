@@ -20,7 +20,13 @@ citySearch.addEventListener("submit", showCity);
 let now = new Date();
 let h3 = document.querySelector("h3");
 let hour = now.getHours();
+if (hour < 10) {
+  hour = `0${hour}`;
+}
 let min = now.getMinutes();
+if (min < 10) {
+  min = `0 ${min}`;
+}
 let days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
 let day = days[now.getDay()];
 let months = [
