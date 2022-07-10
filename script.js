@@ -25,7 +25,7 @@ if (hour < 10) {
 }
 let min = now.getMinutes();
 if (min < 10) {
-  min = `0 ${min}`;
+  min = `0${min}`;
 }
 let days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
 let day = days[now.getDay()];
